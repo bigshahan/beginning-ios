@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-gv-qKZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-gv-qKZ">
                                 <rect key="frame" x="20" y="194" width="560" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,19 +73,33 @@
                                     <outlet property="delegate" destination="nRO-TP-4gK" id="fy9-uq-lPB"/>
                                 </connections>
                             </textField>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Meme" translatesAutoresizingMaskIntoConstraints="NO" id="GIh-S2-Q7Q">
+                                <rect key="frame" x="20" y="214" width="560" height="366"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gTv-Wr-qzF" firstAttribute="top" secondItem="aHa-GX-DI0" secondAttribute="bottom" constant="50" id="2vO-7P-PbV"/>
                             <constraint firstItem="gTv-Wr-qzF" firstAttribute="leading" secondItem="SRS-4y-FkX" secondAttribute="leading" constant="20" id="5M6-YI-hgw"/>
+                            <constraint firstItem="GIh-S2-Q7Q" firstAttribute="top" secondItem="gTv-Wr-qzF" secondAttribute="bottom" constant="242" id="9fi-36-GT4"/>
+                            <constraint firstItem="l12-BI-cmM" firstAttribute="top" secondItem="GIh-S2-Q7Q" secondAttribute="bottom" constant="20" id="EIe-FD-beH"/>
                             <constraint firstItem="1VP-gv-qKZ" firstAttribute="top" secondItem="gTv-Wr-qzF" secondAttribute="bottom" constant="50" id="HNj-Ud-Mqh"/>
+                            <constraint firstItem="GIh-S2-Q7Q" firstAttribute="centerX" secondItem="SRS-4y-FkX" secondAttribute="centerX" id="g13-rm-wzw"/>
                             <constraint firstItem="1VP-gv-qKZ" firstAttribute="leading" secondItem="SRS-4y-FkX" secondAttribute="leading" constant="20" id="imk-2r-0Fr"/>
                             <constraint firstAttribute="trailing" secondItem="1VP-gv-qKZ" secondAttribute="trailing" constant="20" id="m1c-bH-Jrg"/>
+                            <constraint firstItem="GIh-S2-Q7Q" firstAttribute="leading" secondItem="SRS-4y-FkX" secondAttribute="leading" constant="20" id="mcy-uL-DeT"/>
                             <constraint firstAttribute="trailing" secondItem="gTv-Wr-qzF" secondAttribute="trailing" constant="20" id="n4T-X8-hY7"/>
+                            <constraint firstItem="GIh-S2-Q7Q" firstAttribute="top" secondItem="1VP-gv-qKZ" secondAttribute="bottom" constant="20" id="tvV-d0-WtC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9fi-36-GT4"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="displayTextLabel" destination="1VP-gv-qKZ" id="BTv-Zu-fqQ"/>
+                        <outlet property="meme" destination="GIh-S2-Q7Q" id="0It-Tt-e2g"/>
                         <outlet property="textField" destination="gTv-Wr-qzF" id="loK-MC-ldU"/>
                     </connections>
                 </viewController>
@@ -110,4 +124,7 @@
             <point key="canvasLocation" x="-866" y="273"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Meme" width="640" height="480"/>
+    </resources>
 </document>

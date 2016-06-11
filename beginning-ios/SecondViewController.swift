@@ -12,6 +12,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var displayTextLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var meme: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +51,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             displayTextLabel.text = string
         }
 
-        // display drake meme
+        // display meme
+        if let text = displayTextLabel.text where text == "meme" {
+            meme.hidden = false
+        } else {
+            meme.hidden = true
+        }
         
 
         return true
