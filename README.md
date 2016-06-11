@@ -2,6 +2,7 @@
 
 Sample project containing IBAction, Text Field, and a Storyboard transition
 
+Project was created on Xcode 7.3.1
 
 ## Further Resources
 
