@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var displayTextLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -69,6 +69,9 @@
                                 <rect key="frame" x="20" y="114" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nRO-TP-4gK" id="fy9-uq-lPB"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,6 +84,9 @@
                             <constraint firstAttribute="trailing" secondItem="gTv-Wr-qzF" secondAttribute="trailing" constant="20" id="n4T-X8-hY7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayTextLabel" destination="1VP-gv-qKZ" id="BTv-Zu-fqQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhi-kR-seM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
