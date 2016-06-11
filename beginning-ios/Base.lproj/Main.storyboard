@@ -68,7 +68,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-Wr-qzF">
                                 <rect key="frame" x="20" y="114" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="nRO-TP-4gK" id="fy9-uq-lPB"/>
                                 </connections>
@@ -86,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="displayTextLabel" destination="1VP-gv-qKZ" id="BTv-Zu-fqQ"/>
+                        <outlet property="textField" destination="gTv-Wr-qzF" id="loK-MC-ldU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhi-kR-seM" userLabel="First Responder" sceneMemberID="firstResponder"/>

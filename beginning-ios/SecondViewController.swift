@@ -11,6 +11,7 @@ import UIKit
 class SecondViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var displayTextLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +34,26 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
+    }
+
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+
+        // display corresponding text
+        if let text = textField.text as? NSString {
+            let newText = text.stringByReplacingCharactersInRange(range, withString: string)
+            displayTextLabel.text = newText
+        } else {
+            displayTextLabel.text = string
+        }
+
+        // display drake meme
+        
+
+        return true
+    }
 
 }
