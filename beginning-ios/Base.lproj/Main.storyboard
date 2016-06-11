@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
                                                 <state key="normal" title="Press Me"/>
                                                 <connections>
-                                                    <action selector="pressMePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOw-6l-1hH"/>
+                                                    <segue destination="nRO-TP-4gK" kind="show" id="kZr-KV-9bo"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -44,6 +44,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-132" y="273"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="tHh-4F-DfE">
+            <objects>
+                <viewController id="nRO-TP-4gK" customClass="SecondViewController" customModule="beginning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aHa-GX-DI0"/>
+                        <viewControllerLayoutGuide type="bottom" id="l12-BI-cmM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SRS-4y-FkX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhi-kR-seM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="273"/>
         </scene>
     </scenes>
 </document>
